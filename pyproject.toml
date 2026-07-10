@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "safeda-aam"
+version = "0.1.0"
+description = "Sort a cluttered research directory in minutes: scaffold + auto-sort + naming convention checks."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Aryan Walia" }]
+
+[project.urls]
+Homepage = "https://github.com/aryanwalia2003/safeda-aam"
+
+[project.scripts]
+safeda-aam = "safeda_aam.cli:main"
+
+[tool.setuptools]
+packages = ["safeda_aam"]
