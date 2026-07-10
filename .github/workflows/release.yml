@@ -31,10 +31,10 @@ jobs:
           "$PYBIN/python" --version
 
       - name: Install build tooling
-        run: "$PYBIN/pip" install pyinstaller
+        run: $PYBIN/pip install pyinstaller
 
       - name: Build standalone binary
-        run: "$PYBIN/pyinstaller" --onefile --name safeda-aam --paths . packaging/pyinstaller_entry.py
+        run: $PYBIN/pyinstaller --onefile --name safeda-aam --paths . packaging/pyinstaller_entry.py
 
       - name: Stage artifact
         run: |
